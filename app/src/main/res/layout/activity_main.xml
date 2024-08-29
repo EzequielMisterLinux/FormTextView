@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#FAF3F3">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Registro"
+        android:textSize="26sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:inputType="text"
+        android:background="@android:color/white"
+        android:padding="16dp"
+    android:textColor="#333333"
+    android:textColorHint="#999999"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp"
+    android:minHeight="56dp"
+    android:gravity="center_vertical"/>
+
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu género"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/rbFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/rbOtro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otro"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvIntereses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tus intereses"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:paddingBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbTecnologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tecnología"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbDeportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deportes"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Música"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/cbViajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viajes"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Registrar"
+        android:textColor="#333333"
+    android:textSize="16sp"
+    android:background="#A8DAB5"
+    android:padding="16dp"
+    android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:visibility="gone" />
+
+</LinearLayout>
